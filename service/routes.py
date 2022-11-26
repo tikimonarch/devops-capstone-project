@@ -61,6 +61,7 @@ def create_accounts():
 # LIST ALL ACCOUNTS
 ######################################################################
 
+
 @app.route("/accounts", methods=["GET"])
 def list_accounts():
     """
@@ -78,6 +79,7 @@ def list_accounts():
 # READ AN ACCOUNT
 ######################################################################
 
+
 @app.route("/accounts/<int:acc_id>", methods=["GET"])
 def get_accounts(acc_id):
     """
@@ -94,6 +96,7 @@ def get_accounts(acc_id):
 ######################################################################
 # UPDATE AN EXISTING ACCOUNT
 ######################################################################
+
 
 @app.route("/accounts/<int:acc_id>", methods=["PUT"])
 def update_accounts(acc_id):
@@ -113,6 +116,7 @@ def update_accounts(acc_id):
 ######################################################################
 # DELETE AN ACCOUNT
 ######################################################################
+
 
 @app.route("/accounts/<int:acc_id>", methods=["DELETE"])
 def delete_accounts(acc_id):
